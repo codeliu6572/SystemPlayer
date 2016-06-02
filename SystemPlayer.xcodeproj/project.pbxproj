@@ -15,6 +15,7 @@
 		68366EA21CFFC4E300D8F88A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68366EA01CFFC4E300D8F88A /* LaunchScreen.storyboard */; };
 		68366EAD1CFFC4E300D8F88A /* SystemPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68366EAC1CFFC4E300D8F88A /* SystemPlayerTests.m */; };
 		68366EB81CFFC4E300D8F88A /* SystemPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68366EB71CFFC4E300D8F88A /* SystemPlayerUITests.m */; };
+		68366EC61CFFC60800D8F88A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68366EC51CFFC60800D8F88A /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		68366EB31CFFC4E300D8F88A /* SystemPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SystemPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68366EB71CFFC4E300D8F88A /* SystemPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemPlayerUITests.m; sourceTree = "<group>"; };
 		68366EB91CFFC4E300D8F88A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68366EC51CFFC60800D8F88A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68366EC61CFFC60800D8F88A /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		68366E861CFFC4E300D8F88A = {
 			isa = PBXGroup;
 			children = (
+				68366EC51CFFC60800D8F88A /* MediaPlayer.framework */,
 				68366E911CFFC4E300D8F88A /* SystemPlayer */,
 				68366EAB1CFFC4E300D8F88A /* SystemPlayerTests */,
 				68366EB61CFFC4E300D8F88A /* SystemPlayerUITests */,
@@ -414,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SystemPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Codeliu.SystemPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SystemPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Codeliu.SystemPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
